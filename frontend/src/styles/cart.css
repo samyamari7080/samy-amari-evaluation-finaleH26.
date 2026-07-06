@@ -1,0 +1,89 @@
+/* Styles pour le panier */
+/* la palette de couleurs #E1DCD9 #8F8681 #A67F8  */
+.cart-container {
+  padding: 20px;
+  background-color: #E1DCD9;
+  min-height: 80vh;
+}
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+
+}
+.cart-table th, .cart-table td {
+  border: 1px solid #8F8681;
+  padding: 10px;
+  text-align: left;
+}
+.cart-table th {
+  background-color: #8F8681;
+  color: white;
+}
+.cart-table td {
+  background-color: #A67F78;
+  color: white;
+}
+.cart-summary {
+  background-color: #8F8681;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+.cart-summary h2 {
+  margin-top: 0;
+}
+.cart-summary button {
+  background-color: #E1DCD9;
+  color: #8F8681;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}   
+.cart-summary button:hover {
+  background-color: #8F8681;
+  color: #E1DCD9;
+}
+/* styledes icones */
+.cart-summary i {
+  margin-right: 5px;
+}
+.cart-table button {
+  background-color: transparent;
+  border: none;
+  color: #E1DCD9;
+  cursor: pointer;
+}
+.cart-table button:hover {
+  color: #8F8681;
+}
+/*  responsive */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 10px;
+  }
+  .cart-table th, .cart-table td {
+    padding: 5px;
+  }
+}
+/* responsive tableau */
+@media (max-width: 768px) {
+  .cart-table {
+    font-size: 14px;
+  }
+}
+/* Styliser le input de type number */
+.cart-table input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #8F8681;
+  background-color: #A67F78;
+  color: white;
+}
+/* styliser les images */
+.cart-table img {
+  max-width: 100px;
+  height: auto;
+  box-shadow: 1px 1px 3px black;
+}
